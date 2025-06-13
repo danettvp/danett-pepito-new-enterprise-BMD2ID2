@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    height: 100%;
+    font-family: "dm-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+  
+  body {
+    padding: 16px;
+    width: 393px;
+    height: 852px;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 90px 20px;
+    background-color: pink;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* space between date and summary */
+    align-items: flex-start; /* text left aligned */
+  }
+  
+  .nav-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .hamburger {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+  }  
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* small gap between icon and text */
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  /* Cards*/
+  .card {
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-header {
+    border-bottom: 1px solid #ccc;  /* light gray line */
+    padding-bottom: 8px;            /* some space between text and line */      
+    width: 100%;
+  }
+
+  .waste-card .waste-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .waste-card {
+    width: 325px;
+    margin-top: 8px;
+  }  
+  
+  .cup {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* .waste-info .waste-label {
+    font-size: 14px;
+  } */
+  
+  .waste-amount {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .waste-amount span {
+    font-size: 14px;
+  }
+  
+  /* Impact Card */
+  .impact-card {
+    background-color: #eee;
+    width: 325px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 8px;
+  }
+  
+  .impact-text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Bottom Cards */
+  .bottom-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .small-card .card-content {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .small-card {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bold {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+  
+  /* MENU */
+  .mobile-menu {
+    grid-area: 1 / 1 / 2 / 2; /* exactly the same cell as container */
+    background: grey;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: none;  /* hidden by default */
+    z-index: 10;    /* on top */
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+  /* Show menu when open */
+  .mobile-menu.open {
+    display: block;
+  }
+  
+  
+  /* Style your close button */
+  .close-menu {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+
+  .manual-log-text {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .manual-log-link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #007bff; /* nice blue link color */
+  }
+  
+  .manual-log-link:hover {
+    color: #0056b3; /* darker blue on hover */
+  }
+  
+  .view-history-btn {
+    margin-top: 24px;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .view-history-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .waste-highlight {
+    text-align: left;        /* left-align text */
+    width: 100%;             /* full width */
+    margin-top: 40px;
+    margin-bottom: 20px;     /* optional spacing below */
+    padding-left: 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  
+  /* Logo at the top */
+  /* .logo {
+    width: 120px;
+    height: auto;
+    margin-top: 20px;
+  } */
+  
+  /* Main welcome image */
+  /* .welcome-img {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  } */
+  
+  /* Button near bottom */
+  /* .get-started {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  } */
+  

@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorta</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Summary</title>
+  <link rel="stylesheet" href="https://use.typekit.net/ndy1enc.css">
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+    <div class="page-wrapper">
+
+        <main class="container">
     
+          <nav class="nav-bar">
+              <div class="nav-text">
+                <p class="date">Friday, 6 Jun</p>
+                <h1 class="nav-title">Summary</h1>
+              </div>
+              <img class="hamburger" src="assets/burger-menu-svgrepo-com.svg" alt="Menu" />
+            </nav>
+    
+    <!-- <header class="top-bar">
+      <p class="date">Friday, 6 Jun</p>
+    </header>
+
+    <h1 class="title">Summary</h1> -->
+
+    <section class="card waste-card">
+      <h2 id="scraps-title" class="card-header">Scraps Diverted</h2>
+      <div class="waste-content">
+        <img src="assets/cup.png" alt="Cup filled to indicate waste amount" class="cup" />
+        <div class="waste-info">
+          <p class="waste-label">Waste</p>
+          <p class="waste-amount">3.8 <span>KG</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card impact-card">
+      <h2 id="impact-title" class="card-header">Your Impact</h2>
+      <br>
+      <p class="impact-text">That’s like saving 12kg of CO₂ 🌱</p>
+    </section>
+
+    <section class="bottom-cards">
+      <article class="card small-card">
+        <h2 id="last-scan-title" class="card-header">Last Scan</h2>
+        <div class="card-content">
+          <p>Today</p>
+          <p class="bold">12:12am</p>
+        </div>
+      </article>
+
+      <article class="card small-card">
+        <h2 id="tips-title" class="card-header">Smart Tips</h2>
+        <div class="card-content">
+          <p>Top Wasted is</p>
+          <p class="bold">bread</p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <div class="mobile-menu">
+    <img class="close-menu" src="assets/close.svg" alt="Close menu" />
+    <ul>
+        <li><a href="index.html#info">Highlights</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Saved</a></li>
+    </ul>
+  </div>
 </body>
 </html>
