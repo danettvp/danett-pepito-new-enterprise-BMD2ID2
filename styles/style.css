@@ -246,6 +246,33 @@
   p {
     font-size: 12px;
   }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 1.5rem auto; /* Centers the card list horizontally */
+  }
+  
+  .card-list article {
+    background-color: #fdfdfd;
+    border-radius: 16px;
+    padding: 1rem 1.2rem;
+  }
+  
+  
+  .card-list h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .card-list p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
   
   /* Logo at the top */
   /* .logo {
