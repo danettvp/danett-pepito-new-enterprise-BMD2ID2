@@ -1,302 +1,344 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html{
-    height: 100%;
-    font-family: "dm-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    }
-  
-  body {
-    padding: 16px;
-    width: 393px;
-    height: 852px;
-    margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-family: "dm-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 430px;
-    margin: 0 auto;
-    padding: 90px 20px;
-    background-color: pink;
-  }
+body {
+  padding: 16px;
+  width: 393px;
+  height: 852px;
+  margin: 0 auto;
+}
 
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 40px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 90px 20px;
+  background-color: pink;
+}
 
-  .nav-text {
-    display: flex;
-    flex-direction: column;
-    gap: 4px; /* space between date and summary */
-    align-items: flex-start; /* text left aligned */
-  }
-  
-  .nav-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .date {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-  }
-  
-  .hamburger {
-    width: 30px;
-    height: auto;
-    cursor: pointer;
-  }  
-  
-  .top-bar {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* small gap between icon and text */
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
-  /* Cards*/
-  .card {
-    border-radius: 12px;
-    padding: 10px;
-    background-color: #eee;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
 
-  .card-header {
-    border-bottom: 1px solid #ccc;  /* light gray line */
-    padding-bottom: 8px;            /* some space between text and line */      
-    width: 100%;
-  }
+.nav-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* space between date and summary */
+  align-items: flex-start; /* text left aligned */
+}
 
-  .waste-card .waste-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
+.nav-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
 
-  .waste-card {
-    width: 325px;
-    margin-top: 8px;
-  }  
-  
-  .cup {
-    width: 100px;
-    height: auto;
-  }
-  
-  /* .waste-info .waste-label {
-    font-size: 14px;
-  } */
-  
-  .waste-amount {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .waste-amount span {
-    font-size: 14px;
-  }
-  
-  /* Impact Card */
-  .impact-card {
-    background-color: #eee;
-    width: 325px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 8px;
-  }
-  
-  .impact-text {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  
-  
-  /* Bottom Cards */
-  .bottom-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 8px;
-  }
-  
-  .small-card .card-content {
-    margin-top: 10px;
-    padding: 10px;
-  }
+.date {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
 
-  .small-card {
-    width: 160px;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.profile {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}  
 
-  .bold {
-    font-size: 18px;
-    font-weight: bold;
-  }
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* small gap between icon and text */
+  width: 100%;
+  margin-bottom: 40px;
+}
 
-  h2 {
-    font-size: 16px;
-  }
+/* Cards*/
+.card {
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 430px;
-    margin: 0 auto;
-    min-height: 100vh;
-  }
-  
-  /* MENU */
-  .mobile-menu {
-    grid-area: 1 / 1 / 2 / 2; /* exactly the same cell as container */
-    background: grey;
-    padding: 2rem;
-    box-sizing: border-box;
-    display: none;  /* hidden by default */
-    z-index: 10;    /* on top */
-    overflow-y: auto;
-    height: 100vh;
-  }
-  
-  /* Show menu when open */
-  .mobile-menu.open {
-    display: block;
-  }
-  
-  
-  /* Style your close button */
-  .close-menu {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-bottom: 1rem;
-  }
-  
+.waste-card .waste-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
-  .manual-log-text {
-    margin-top: 24px;
-    font-size: 12px;
-    color: #333;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .manual-log-link {
-    text-decoration: underline;
-    cursor: pointer;
-    color: #007bff; /* nice blue link color */
-  }
-  
-  .manual-log-link:hover {
-    color: #0056b3; /* darker blue on hover */
-  }
-  
-  .view-history-btn {
-    margin-top: 24px;
-    width: 300px;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: none;
-    background-color: green;
-    color: white;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .view-history-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .waste-highlight {
-    text-align: left;        /* left-align text */
-    width: 100%;             /* full width */
-    margin-top: 40px;
-    margin-bottom: 20px;     /* optional spacing below */
-    padding-left: 0;
-  }
+.waste-card {
+  width: 325px;
+  margin-top: 8px;
+}  
 
-  p {
-    font-size: 12px;
-  }
+.cup {
+  width: 100px;
+  height: auto;
+}
 
-  .card-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    margin: 1.5rem auto; /* Centers the card list horizontally */
-  }
-  
-  .card-list article {
-    background-color: #fdfdfd;
-    border-radius: 16px;
-    padding: 1rem 1.2rem;
-  }
-  
-  
-  .card-list h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.4rem;
-  }
-  
-  .card-list p {
-    margin: 0.2rem 0;
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-  
-  
-  /* Logo at the top */
-  /* .logo {
-    width: 120px;
-    height: auto;
-    margin-top: 20px;
-  } */
-  
-  /* Main welcome image */
-  /* .welcome-img {
-    width: 80%;
-    max-width: 320px;
-    height: auto;
-  } */
-  
-  /* Button near bottom */
-  /* .get-started {
-    width: 100%;
-    max-width: 300px;
-    padding: 15px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  } */
-  
+/* .waste-info .waste-label {
+  font-size: 14px;
+} */
+
+.waste-amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.waste-amount span {
+  font-size: 14px;
+}
+
+/* Impact Card */
+.impact-card {
+  background-color: #eee;
+  width: 325px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.impact-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
+/* Bottom Cards */
+.bottom-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.small-card .card-content {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.small-card {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* MENU */
+.mobile-menu {
+  grid-area: 1 / 1 / 2 / 2; /* exactly the same cell as container */
+  background: grey;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: none;  /* hidden by default */
+  z-index: 10;    /* on top */
+  overflow-y: auto;
+  height: 100vh;
+}
+
+/* Show menu when open */
+.mobile-menu.open {
+  display: block;
+}
+
+
+/* Style your close button */
+.close-menu {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+
+.manual-log-text {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+.manual-log-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #007bff; /* nice blue link color */
+}
+
+.manual-log-link:hover {
+  color: #0056b3; /* darker blue on hover */
+}
+
+.view-history-btn {
+  margin-top: 24px;
+  width: 300px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.view-history-btn:hover {
+  background-color: #0056b3;
+}
+
+.waste-highlight {
+  text-align: left;        /* left-align text */
+  width: 100%;             /* full width */
+  margin-top: 40px;
+  margin-bottom: 20px;     /* optional spacing below */
+  padding-left: 0;
+}
+
+p {
+  font-size: 12px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin: 1.5rem auto; /* Centers the card list horizontally */
+}
+
+.card-list article {
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+}
+
+
+.card-list h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-list p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Sticky Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 363px; /* same as your container */
+  height: 60px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+
+
+.bottom-nav .nav-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 12px;
+color: #444;
+text-decoration: none;
+}
+
+.bottom-nav .nav-item img {
+width: 24px;
+height: 24px;
+margin-bottom: 2px;
+}
+
+.bottom-nav .nav-item.active {
+color: #007AFF;
+}
+
+/* Adjust container padding to prevent content hiding behind nav */
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+max-width: 430px;
+margin: 0 auto;
+padding: 90px 20px 100px; /* extra space at bottom for nav */
+background-color: pink;
+}
+
+
+/* Logo at the top */
+/* .logo {
+  width: 120px;
+  height: auto;
+  margin-top: 20px;
+} */
+
+/* Main welcome image */
+/* .welcome-img {
+  width: 80%;
+  max-width: 320px;
+  height: auto;
+} */
+
+/* Button near bottom */
+/* .get-started {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+} */

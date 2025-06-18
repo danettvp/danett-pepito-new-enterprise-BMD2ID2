@@ -9,69 +9,66 @@
   <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="page-wrapper">
 
-        <main class="container">
-    
-          <nav class="nav-bar">
-              <div class="nav-text">
-                <p class="date">Friday, 6 Jun</p>
-                <h1 class="nav-title">Summary</h1>
-              </div>
-              <img class="hamburger" src="assets/burger-menu-svgrepo-com.svg" alt="Menu" />
-            </nav>
-    
-    <!-- <header class="top-bar">
-      <p class="date">Friday, 6 Jun</p>
-    </header>
-
-    <h1 class="title">Summary</h1> -->
-
-    <section class="card waste-card">
-      <h2 id="scraps-title" class="card-header">Scraps Diverted</h2>
-      <div class="waste-content">
-        <img src="assets/cup.png" alt="Cup filled to indicate waste amount" class="cup" />
-        <div class="waste-info">
-          <p class="waste-label">Waste</p>
-          <p class="waste-amount">3.8 <span>KG</span></p>
+    <main class="container">
+      <nav class="nav-bar">
+        <div class="nav-text">
+          <p class="date">Friday, 6 Jun</p>
+          <h1 class="nav-title">Summary</h1>
         </div>
-      </div>
-    </section>
+        <img class="profile" src="assets/profile.svg" alt="Profile" />
+      </nav>
 
-    <section class="card impact-card">
-      <h2 id="impact-title" class="card-header">Your Impact</h2>
-      <br>
-      <p class="impact-text">That’s like saving 12kg of CO₂ 🌱</p>
-    </section>
-
-    <section class="bottom-cards">
-      <article class="card small-card">
-        <h2 id="last-scan-title" class="card-header">Last Scan</h2>
-        <div class="card-content">
-          <p>Today</p>
-          <p class="bold">12:12am</p>
+      <section class="card waste-card">
+        <h2 id="scraps-title" class="card-header">Scraps Diverted</h2>
+        <div class="waste-content">
+          <img src="assets/cup.png" alt="Cup filled to indicate waste amount" class="cup" />
+          <div class="waste-info">
+            <p class="waste-label">Waste</p>
+            <p class="waste-amount">3.8 <span>KG</span></p>
+          </div>
         </div>
-      </article>
+      </section>
 
-      <article class="card small-card">
-        <h2 id="tips-title" class="card-header">Smart Tips</h2>
-        <div class="card-content">
-          <p>Top Wasted is</p>
-          <p class="bold">bread</p>
-        </div>
-      </article>
-    </section>
+      <section class="card impact-card">
+        <h2 id="impact-title" class="card-header">Your Impact</h2>
+        <br>
+        <p class="impact-text">That’s like saving 12kg of CO₂ 🌱</p>
+      </section>
 
-  </main>
+      <section class="bottom-cards">
+        <article class="card small-card">
+          <h2 id="last-scan-title" class="card-header">Last Scan</h2>
+          <div class="card-content">
+            <p>Today</p>
+            <p class="bold">12:12am</p>
+          </div>
+        </article>
 
-  <div class="mobile-menu">
-    <img class="close-menu" src="assets/close.svg" alt="Close menu" />
-    <ul>
-        <li><a href="index.html#info">Highlights</a></li>
-        <li><a href="browse.html">Browse</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Saved</a></li>
-    </ul>
-  </div>
+        <article class="card small-card">
+          <h2 id="tips-title" class="card-header">Smart Tips</h2>
+          <div class="card-content">
+            <p>Top Wasted is</p>
+            <p class="bold">bread</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+  <!-- Bottom Sticky Nav -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <img src="assets/home.svg" alt="Home" />
+      <span>Home</span>
+    </a>
+    <a href="summary.html" class="nav-item active">
+      <img src="assets/summary.svg" alt="Summary" />
+      <span>Summary</span>
+    </a>
+    <a href="settings.html" class="nav-item">
+      <img src="assets/settings.svg" alt="Settings" />
+      <span>Settings</span>
+    </a>
+  </nav>
 </body>
 </html>
