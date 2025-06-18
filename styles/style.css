@@ -4,9 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --eggshell: #F8F6F3;
+  --sorta-green: #B0DF5E;
+  --vegetable: #509F22;
+  --mud: #2C2123;
+  --bin-red: #FF789C;
+  --bin-yellow: #F8CD56;
+  --primary-font: 'dm-sans', sans-serif;
+  --secondary-font: 'puffin-display-soft', sans-serif;
+}
+
 html{
   height: 100%;
-  font-family: "dm-sans", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
   font-style: normal;
   }
@@ -26,7 +37,7 @@ body {
   max-width: 430px;
   margin: 0 auto;
   padding: 90px 20px;
-  background-color: pink;
+  background-color: var(--eggshell);
 }
 
 .nav-bar {
@@ -44,9 +55,19 @@ body {
   align-items: flex-start; /* text left aligned */
 }
 
+.summary {
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 35px;
+  margin: 0;
+}
+
 .nav-title {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: var(--primary-font);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 26px;
   margin: 0;
 }
 
@@ -80,29 +101,36 @@ body {
   gap: 8px;
 }
 
+.waste-card {
+  background-color: transparent;
+  border: 2px solid var(--sorta-green);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 325px;
+  margin-top: 8px;
+  border-radius: 12px;
+  padding: 10px;
+}
+
 .waste-card .waste-content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
-.waste-card {
-  width: 325px;
-  margin-top: 8px;
-}  
+.waste-card .card-header {
+  margin-bottom: 16px;
+}
 
 .cup {
   width: 100px;
   height: auto;
 }
 
-/* .waste-info .waste-label {
-  font-size: 14px;
-} */
-
 .waste-amount {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 70px;
 }
 
 .waste-amount span {
@@ -111,7 +139,7 @@ body {
 
 /* Impact Card */
 .impact-card {
-  background-color: #eee;
+  background-color: var(--sorta-green);
   width: 325px;
   border-radius: 12px;
   display: flex;
@@ -122,8 +150,10 @@ body {
 
 .impact-text {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 900;
   margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -157,43 +187,6 @@ h2 {
   font-size: 16px;
 }
 
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  max-width: 430px;
-  margin: 0 auto;
-  min-height: 100vh;
-}
-
-/* MENU */
-.mobile-menu {
-  grid-area: 1 / 1 / 2 / 2; /* exactly the same cell as container */
-  background: grey;
-  padding: 2rem;
-  box-sizing: border-box;
-  display: none;  /* hidden by default */
-  z-index: 10;    /* on top */
-  overflow-y: auto;
-  height: 100vh;
-}
-
-/* Show menu when open */
-.mobile-menu.open {
-  display: block;
-}
-
-
-/* Style your close button */
-.close-menu {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-
 .manual-log-text {
   margin-top: 24px;
   font-size: 12px;
@@ -205,36 +198,29 @@ h2 {
 .manual-log-link {
   text-decoration: underline;
   cursor: pointer;
-  color: #007bff; /* nice blue link color */
+  color: var(--bin-red);
 }
 
 .manual-log-link:hover {
-  color: #0056b3; /* darker blue on hover */
+  color: var(--bin-yellow);
 }
 
 .view-history-btn {
   margin-top: 24px;
-  width: 300px;
+  width: 330px;
   padding: 10px;
   font-size: 18px;
   border-radius: 8px;
   border: none;
-  background-color: green;
+  background-color: var(--vegetable);
   color: white;
   cursor: pointer;
   display: block;
+  font: var(--primary-font);
 }
 
 .view-history-btn:hover {
-  background-color: #0056b3;
-}
-
-.waste-highlight {
-  text-align: left;        /* left-align text */
-  width: 100%;             /* full width */
-  margin-top: 40px;
-  margin-bottom: 20px;     /* optional spacing below */
-  padding-left: 0;
+  background-color: var(--bin-red);
 }
 
 p {
@@ -246,7 +232,7 @@ p {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  margin: 1.5rem auto; /* Centers the card list horizontally */
+  margin: 1.5rem auto;
 }
 
 .card-list article {
@@ -263,9 +249,234 @@ p {
 
 .card-list p {
   margin: 0.2rem 0;
-  font-size: 0.95rem;
+  font-size: 16px;
   line-height: 1.4;
 }
+
+.small-card {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.small-card .card-content {
+  flex: 1;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.small-card .card-content p.bold {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.last-scan-card {
+  background-color: var(--bin-red);
+}
+
+.tips-card{
+  background-color: var(--bin-yellow);
+}
+
+.last-scan-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0;
+}
+
+.last-scan-card .arrow-icon {
+  width: 16px;  
+  height: 16px;
+  cursor: pointer; /* optional */
+}
+
+.tips-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0;
+}
+
+.tips-card .arrow-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer; /* optional */
+}
+
+/* Waste Details */
+.bread-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.bread-img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.bread-text {
+  margin-top: -50px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.last-scan-page .waste-card,
+.last-scan-page .small-card {
+  background-color: var(--sorta-green);
+}
+
+/* Log Food Button */
+button[type="submit"]{
+  background-color: var(--vegetable);
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--bin-red);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+.btn {
+  background-color: transparent;         
+  color: var(--vegetable);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75em 1.5em;
+  border: 2px solid var(--vegetable);
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 305px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--bin-red);
+  border: 2px solid var(--bin-red);
+  color: white;   
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.tip-title h3 {
+  font-size: 16px; /* adjust as needed */
+}
+
+.waste-highlight {
+  text-align: left;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.waste-tip {
+  display: flex;
+  align-items: flex-start;  /* align top of image and text */
+  gap: 1em;
+  padding: 0;
+  height: 100px;
+}
+
+img.tip {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+
+.card:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.tip-card {
+  background-color: var(--sorta-green);
+  padding: 15px;
+}
+
+.tip-card .waste-content {
+  display: flex;
+  align-items: flex-start; /* aligns image and text top edges */
+  gap: 12px;
+}
+
+.tip-card .latest-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tip-card .tip-title {
+  margin-top: 0; /* remove top margin to line up with image top */
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.waste-tip {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start; /* aligns image and text container top */
+}
+
+.tip {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.text-arrow-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes arrow to bottom */
+  flex-grow: 1; /* takes all horizontal space left */
+  height: 100px; /* same height as image */
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  align-self: flex-end; /* optional: arrow aligned to right */
+}
+
+
+
+
+
 
 /* Sticky Bottom Nav */
 .bottom-nav {
@@ -273,7 +484,7 @@ p {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 363px; /* same as your container */
+  width: 363px; 
   height: 60px;
   background-color: #fff;
   border-top: 1px solid #ccc;
@@ -282,8 +493,6 @@ p {
   align-items: center;
   z-index: 100;
 }
-
-
 
 .bottom-nav .nav-item {
 display: flex;
@@ -299,46 +508,3 @@ width: 24px;
 height: 24px;
 margin-bottom: 2px;
 }
-
-.bottom-nav .nav-item.active {
-color: #007AFF;
-}
-
-/* Adjust container padding to prevent content hiding behind nav */
-.container {
-display: flex;
-flex-direction: column;
-align-items: center;
-min-height: 100vh;
-max-width: 430px;
-margin: 0 auto;
-padding: 90px 20px 100px; /* extra space at bottom for nav */
-background-color: pink;
-}
-
-
-/* Logo at the top */
-/* .logo {
-  width: 120px;
-  height: auto;
-  margin-top: 20px;
-} */
-
-/* Main welcome image */
-/* .welcome-img {
-  width: 80%;
-  max-width: 320px;
-  height: auto;
-} */
-
-/* Button near bottom */
-/* .get-started {
-  width: 100%;
-  max-width: 300px;
-  padding: 15px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-} */

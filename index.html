@@ -14,7 +14,7 @@
       <nav class="nav-bar">
         <div class="nav-text">
           <p class="date">Friday, 6 Jun</p>
-          <h1 class="nav-title">Summary</h1>
+          <h1 class="summary">Summary</h1>
         </div>
         <img class="profile" src="assets/profile.svg" alt="Profile" />
       </nav>
@@ -22,7 +22,7 @@
       <section class="card waste-card">
         <h2 id="scraps-title" class="card-header">Scraps Diverted</h2>
         <div class="waste-content">
-          <img src="assets/cup.png" alt="Cup filled to indicate waste amount" class="cup" />
+          <img src="assets/pie.svg" alt="Cup filled to indicate waste amount" class="cup" />
           <div class="waste-info">
             <p class="waste-label">Waste</p>
             <p class="waste-amount">3.8 <span>KG</span></p>
@@ -33,26 +33,38 @@
       <section class="card impact-card">
         <h2 id="impact-title" class="card-header">Your Impact</h2>
         <br>
-        <p class="impact-text">That’s like saving 12kg of CO₂ 🌱</p>
+        <b class="impact-text">That’s like saving 12kg of CO₂ 🌱</b>
       </section>
 
       <section class="bottom-cards">
-        <article class="card small-card">
-          <h2 id="last-scan-title" class="card-header">Last Scan</h2>
+        <article class="card small-card last-scan-card">
+          <h2 id="last-scan-title" class="card-header">
+            Last Scan 
+            <a href="lastscan.html">
+              <img src="assets/right-arrow.svg" alt="Arrow" class="arrow-icon" />
+            </a>
+          </h2>
           <div class="card-content">
             <p>Today</p>
             <p class="bold">12:12am</p>
           </div>
         </article>
-
-        <article class="card small-card">
-          <h2 id="tips-title" class="card-header">Smart Tips</h2>
+      
+        <article class="card small-card tips-card">
+          <h2 id="tips-title" class="card-header">
+            Smart Tips 
+            <a href="smarttips.html">
+              <img src="assets/right-arrow.svg" alt="Arrow" class="arrow-icon" />
+            </a>
+          </h2>
           <div class="card-content">
             <p>Top Wasted is</p>
-            <p class="bold">bread</p>
+            <p class="bold">Bread</p>
           </div>
         </article>
       </section>
+         
+      
     </main>
 
   <!-- Bottom Sticky Nav -->
@@ -61,11 +73,11 @@
       <img src="assets/home.png" alt="Home" />
       <span>Home</span>
     </a>
-    <a href="summary.html" class="nav-item active">
+    <a href="history.html" class="nav-item active">
       <img src="assets/history.svg" alt="History" />
       <span>History</span>
     </a>
-    <a href="settings.html" class="nav-item">
+    <a href="#" class="nav-item">
       <img src="assets/leaf.svg" alt="Settings" />
       <span>FAQ's</span>
     </a>

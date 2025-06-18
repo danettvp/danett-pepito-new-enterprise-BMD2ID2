@@ -54,4 +54,6 @@ Many young adults in Auckland living independently don’t use the food scrap bi
 
 <!-- ## Other Instructions..?
 
+- To view database function, go to last scan and click 'manually' link.
+
 > Add steps here about Supabase? -->
