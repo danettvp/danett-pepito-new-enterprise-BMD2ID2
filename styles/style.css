@@ -95,11 +95,11 @@ body {
 .card {
   border-radius: 12px;
   padding: 10px;
-  background-color: #eee;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 
 .waste-card {
   background-color: transparent;
@@ -111,10 +111,15 @@ body {
   padding: 10px;
 }
 
+.scraps-green-card {
+  background-color: var(--sorta-green);
+  border: none; /* optional: remove the default outline */
+}
+
 .waste-card .waste-content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .waste-card .card-header {
@@ -122,7 +127,7 @@ body {
 }
 
 .cup {
-  width: 100px;
+  width: 130px;
   height: auto;
 }
 
