@@ -10,10 +10,9 @@ Sorta is a new enterprise that introduces a smart food bin system with AI-powere
 
 Many young adults in Auckland living independently don’t use the food scrap bins provided to them despite paying the yearly fee. Though they are environmentally aware of the consequences of their actions, some still don’t know how to use the bins, while others feel like their individual efforts don’t matter. This app was created to:
 
-- Make food bin usage feel more rewarding
-- Help users get value from the waste services they’re already paying for
+- Track what users throw away and shows the impact over time
 - Encourage small, sustainable habits in daily life
-- Show that small individual actions can lead to meaningful environmental impact
+- Offer personalised tips based on habits and what’s being logged
 
 ---
 
@@ -25,7 +24,7 @@ Many young adults in Auckland living independently don’t use the food scrap bi
 - **Smart Tips**  
   Based on identified food tracking entries, the app provides helpful tips on reducing waste and sorting properly.
 
-- **History**
+- **History**  
   Can view a list of items that were logged by the bin.
 
 - **Last Scan**  
