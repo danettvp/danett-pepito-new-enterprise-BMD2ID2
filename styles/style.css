@@ -479,7 +479,52 @@ img.tip {
 }
 
 
+.first-card {
+  background-color: var(--bin-red);
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
 
+.first-card .latest-info {
+  display: flex;              /* make the container flex */
+  flex-direction: row;        /* row is default but explicit here */
+  justify-content: space-between; /* space out items evenly */
+  align-items: center;        /* vertical center alignment */
+}
+
+.history-card {
+  width: 320px;
+  padding: 10px;
+  background-color: var(--sorta-green); /* optional styling */
+}
+
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* items start from left */
+  gap: 16px; /* space between apple, time, arrow */
+}
+
+.scrap {
+  width: 30px; 
+  height: auto;
+}
+
+.time {
+  font-size: 20px;  /* adjust as needed */
+}
+
+.arrow {
+  width: 24px;    /* arrow size */
+  height: 24px;
+  margin-left: auto; /* pushes arrow all the way to the right */
+}
+
+.waste-highlight h2 {
+  font-size: 30px;
+}
 
 
 
