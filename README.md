@@ -1,13 +1,3 @@
-<!-- A project overview: What is your project? What does it do?
-
-What problem does it solve, or what inspired it?
-
-A list of key features or user flows you’ve implemented
-
-Any other Instructions
-
-Any known issues or limitations -->
-
 # Sorta
 
 ## Project Overview
@@ -20,40 +10,37 @@ Sorta is a new enterprise that introduces a smart food bin system with AI-powere
 
 Many young adults in Auckland living independently don’t use the food scrap bins provided to them despite paying the yearly fee. Though they are environmentally aware of the consequences of their actions, some still don’t know how to use the bins, while others feel like their individual efforts don’t matter. This app was created to:
 
-- Make food bin usage easier and faster  
+- Make food bin usage feel more rewarding
 - Help users get value from the waste services they’re already paying for
 - Encourage small, sustainable habits in daily life
 - Show that small individual actions can lead to meaningful environmental impact
 
 ---
 
-## 🔑 Key Features / User Flows
+## Key Features / User Flows
 
-- **Impact Tracker**  
-  Displays a summary of how much food waste users have diverted from landfill.
+- **Dashboard/Impact Tracker**  
+  Displays a summary of how much food waste users have diverted from landfill. Users can click on arrows to go to another page.
 
 - **Smart Tips**  
   Based on identified food tracking entries, the app provides helpful tips on reducing waste and sorting properly.
 
+- **History**
+  Can view a list of items that were logged by the bin.
+
 - **Last Scan**  
-  From the homepage, users can see the last identified scan, from which they are able to manually input/log items if needed with the *Quick Logging Form*.
+  From the homepage, users can see the last identified scan, from which they are able to manually input/log items if needed with the *Quick Logging Form*. This is where the database is.
 
 - **Quick Logging Form**  
-  Users can input what they’re disposing of, categorize it, and log it manually. Users are able to view this log in a separate page.
+  Users can input what they’re disposing of, categorise it, and log it manually. Users are able to view this log in a separate page.
 
 ---
 
-## ⚠️ Known Issues / Limitations
+## Known Issues / Limitations
 
-- No user authentication — data is shared across all users  
 - Logging form lacks strict validation (e.g. negative numbers allowed)  
 - Minimal data visualisation (basic count only)  
-- Optimized for iPhone 15/pro 
-
----
-
-<!-- ## Other Instructions..?
-
-- To view database function, go to last scan and click 'manually' link.
-
-> Add steps here about Supabase? -->
+- Optimised for iPhone 15/pro an
+- FAQ's page not included, dead link
+- Cannot view articles/tips, dead links
+- Bar on history page ('Today', 'Week', 'Month') is not functional
