@@ -28,10 +28,10 @@ Many young adults in Auckland living independently don’t use the food scrap bi
   Can view a list of items that were logged by the bin.
 
 - **Last Scan**  
-  From the homepage, users can see the last identified scan, from which they are able to manually input/log items if needed with the *Quick Logging Form*. This is where the database is.
+  From the homepage, users can see the last identified scan, from which they are able to manually input/log items if needed with the *Quick Logging Form*. This is where the database is. 
 
 - **Quick Logging Form**  
-  Users can input what they’re disposing of, categorise it, and log it manually. Users are able to view this log in a separate page.
+  Users can input what they’re disposing of, categorise it, and log it manually. Users are able to view this log in a separate page when click 'View Logged Items'.
 
 ---
 
@@ -39,7 +39,17 @@ Many young adults in Auckland living independently don’t use the food scrap bi
 
 - Logging form lacks strict validation (e.g. negative numbers allowed)  
 - Minimal data visualisation (basic count only)  
-- Optimised for iPhone 15/pro an
+- Optimised size for iPhone 15/pro
 - FAQ's page not included, dead link
 - Cannot view articles/tips, dead links
 - Bar on history page ('Today', 'Week', 'Month') is not functional
+
+---
+
+## Other Instructions
+
+To get to database, 
+1. Click arrow next to 'Last Scan' 
+2. Scroll to see 'Something not quite right? Log item manually'
+3. Then click 'Log item manually'
+
