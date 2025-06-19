@@ -51,8 +51,8 @@ body {
 .nav-text {
   display: flex;
   flex-direction: column;
-  gap: 4px; /* space between date and summary */
-  align-items: flex-start; /* text left aligned */
+  gap: 4px; 
+  align-items: flex-start;
 }
 
 .summary {
@@ -86,7 +86,7 @@ body {
 .top-bar {
   display: flex;
   align-items: center;
-  gap: 8px; /* small gap between icon and text */
+  gap: 8px; 
   width: 100%;
   margin-bottom: 40px;
 }
@@ -113,7 +113,7 @@ body {
 
 .scraps-green-card {
   background-color: var(--sorta-green);
-  border: none; /* optional: remove the default outline */
+  border: none;
 }
 
 .waste-card .waste-content {
@@ -142,7 +142,7 @@ body {
   font-size: 14px;
 }
 
-/* Impact Card */
+/* IMPACT CARD */
 .impact-card {
   background-color: var(--sorta-green);
   width: 325px;
@@ -162,7 +162,7 @@ body {
 }
 
 
-/* Bottom Cards */
+/* BOTTOM CARDS */
 .bottom-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -192,6 +192,7 @@ h2 {
   font-size: 16px;
 }
 
+/* MANUAL LOG */
 .manual-log-text {
   margin-top: 24px;
   font-size: 12px;
@@ -295,7 +296,7 @@ p {
 .last-scan-card .arrow-icon {
   width: 16px;  
   height: 16px;
-  cursor: pointer; /* optional */
+  cursor: pointer; 
 }
 
 .tips-card .card-header {
@@ -308,10 +309,10 @@ p {
 .tips-card .arrow-icon {
   width: 16px;
   height: 16px;
-  cursor: pointer; /* optional */
+  cursor: pointer;
 }
 
-/* Waste Details */
+/* LAST SCAN DETAILS */
 .bread-card {
   display: flex;
   flex-direction: column;
@@ -337,7 +338,7 @@ p {
   background-color: var(--sorta-green);
 }
 
-/* Log Food Button */
+/* LOG FOOD BUTTON */
 button[type="submit"]{
   background-color: var(--vegetable);
   color: white;
@@ -393,8 +394,10 @@ button[type="submit"]:active {
   transform: scale(0.98);
 }
 
+
+/* SMART TIPS */
 .tip-title h3 {
-  font-size: 16px; /* adjust as needed */
+  font-size: 16px; 
 }
 
 .waste-highlight {
@@ -407,7 +410,7 @@ button[type="submit"]:active {
 
 .waste-tip {
   display: flex;
-  align-items: flex-start;  /* align top of image and text */
+  align-items: flex-start; 
   gap: 1em;
   padding: 0;
   height: 100px;
@@ -421,7 +424,6 @@ img.tip {
   flex-shrink: 0;
 }
 
-
 .card:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -433,7 +435,7 @@ img.tip {
 
 .tip-card .waste-content {
   display: flex;
-  align-items: flex-start; /* aligns image and text top edges */
+  align-items: flex-start;
   gap: 12px;
 }
 
@@ -444,7 +446,7 @@ img.tip {
 }
 
 .tip-card .tip-title {
-  margin-top: 0; /* remove top margin to line up with image top */
+  margin-top: 0; 
   font-weight: 700;
   font-size: 16px;
 }
@@ -452,7 +454,7 @@ img.tip {
 .waste-tip {
   display: flex;
   gap: 12px;
-  align-items: flex-start; /* aligns image and text container top */
+  align-items: flex-start;
 }
 
 .tip {
@@ -466,19 +468,19 @@ img.tip {
 .text-arrow-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* pushes arrow to bottom */
-  flex-grow: 1; /* takes all horizontal space left */
-  height: 100px; /* same height as image */
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100px;
 }
 
 .arrow-icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  align-self: flex-end; /* optional: arrow aligned to right */
+  align-self: flex-end;
 }
 
-
+/* HISTORY */
 .first-card {
   background-color: var(--bin-red);
   width: 100%;
@@ -487,24 +489,23 @@ img.tip {
 }
 
 .first-card .latest-info {
-  display: flex;              /* make the container flex */
-  flex-direction: row;        /* row is default but explicit here */
-  justify-content: space-between; /* space out items evenly */
-  align-items: center;        /* vertical center alignment */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
 }
 
 .history-card {
   width: 320px;
   padding: 10px;
-  background-color: var(--sorta-green); /* optional styling */
+  background-color: var(--sorta-green); 
 }
-
 
 .header-row {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* items start from left */
-  gap: 16px; /* space between apple, time, arrow */
+  justify-content: flex-start;
+  gap: 16px;
 }
 
 .scrap {
@@ -513,20 +514,18 @@ img.tip {
 }
 
 .time {
-  font-size: 20px;  /* adjust as needed */
+  font-size: 20px;
 }
 
 .arrow {
-  width: 24px;    /* arrow size */
+  width: 24px;
   height: 24px;
-  margin-left: auto; /* pushes arrow all the way to the right */
+  margin-left: auto;
 }
 
 .waste-highlight h2 {
   font-size: 30px;
 }
-
-
 
 /* Sticky Bottom Nav */
 .bottom-nav {
